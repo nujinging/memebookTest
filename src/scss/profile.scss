@@ -1,0 +1,97 @@
+.user_info {
+  margin-bottom:24px;
+  .user_name {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    .name {
+      font-size:24px;
+    }
+  }
+  .visit_count {
+    margin-top:16px;
+    font-size:14px;
+    strong {
+      color:var(--bg-brown);
+    }
+  }
+}
+
+.user_box {
+  padding:16px;
+  border-radius:12px;
+  background:var(--dark-sub);
+  .user_tit {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:12px;
+    .count {
+      display:inline-block;
+      margin-left:6px;
+      color:var(--primary);
+    }
+  }
+  &+.user_box {
+    margin-top:12px;
+  }
+  .word_list {
+    li {
+      .item {
+        display:-webkit-box;
+        font-size:14px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      &+li {
+        margin-top:12px;
+      }
+    }
+  }
+}
+
+.user_info_desc {
+  margin-top:24px;
+  padding:12px 20px;
+  border-radius:12px;
+  background:var(--primary);
+  ul {
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    li {
+      color:#fff;
+      span {
+        display:block;
+        text-align:center;
+        font-size:14px;
+        &.count {
+          font-size:16px;
+          font-weight:bold;
+        }
+      }
+    }
+  }
+}
+
+.invite_box {
+  margin-top:24px;
+  .invite_txt {
+    font-size:14px;
+    text-align:center;
+  }
+  .invite_btn {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:16px auto 0;
+    padding:12px 32px;
+    color:var(--primary);
+    font-size:14px;
+    font-weight:bold;
+    border-radius:8px;
+    background:var(--primary-sub);
+  }
+}
